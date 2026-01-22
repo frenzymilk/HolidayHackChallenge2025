@@ -11,26 +11,28 @@
       
       
       
+        <link rel="prev" href="../act_2_quantgnome_leap/">
       
-        <link rel="next" href="objectives/act_1_its_all_about_defang/">
+      
+        <link rel="next" href="../act_3_gnome_tea/">
       
       
         
       
       
-      <link rel="icon" href="img/misc/favicon.ico">
+      <link rel="icon" href="../../img/misc/favicon.ico">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
     
     
       
-        <title>SANS Holidays Hack Challenge 2026 Write-Up</title>
+        <title>Objective 7 - SANS Holidays Hack Challenge 2026 Write-Up</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -49,9 +51,9 @@
       
     
     
-      <link rel="stylesheet" href="css/extra.css">
+      <link rel="stylesheet" href="../../css/extra.css">
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -76,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#welcome" class="md-skip">
+        <a href="#act-2-going-in-reverse" class="md-skip">
           Skip to content
         </a>
       
@@ -92,7 +94,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="SANS Holidays Hack Challenge 2026 Write-Up" class="md-header__button md-logo" aria-label="SANS Holidays Hack Challenge 2026 Write-Up" data-md-component="logo">
+    <a href="../.." title="SANS Holidays Hack Challenge 2026 Write-Up" class="md-header__button md-logo" aria-label="SANS Holidays Hack Challenge 2026 Write-Up" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M224-32c7 0 13.7 3.1 18.3 8.5l136 160c6.1 7.1 7.4 17.1 3.5 25.6S369.4 176 360 176h-24.9l75.2 88.5c6.1 7.1 7.4 17.1 3.5 25.6S401.4 304 392 304h-38.5l88.8 104.5c6.1 7.1 7.4 17.1 3.5 25.6S433.4 448 424 448H256v64c0 17.7-14.3 32-32 32s-32-14.3-32-32v-64H24c-9.4 0-17.9-5.4-21.8-13.9s-2.6-18.5 3.5-25.6L94.5 304H56c-9.4 0-17.9-5.4-21.8-13.9s-2.6-18.5 3.5-25.6l75.2-88.5H88c-9.4 0-17.9-5.4-21.8-13.9s-2.6-18.5 3.5-25.6l136-160C210.3-28.9 217-32 224-32"/></svg>
@@ -112,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Welcome
+              Objective 7
             
           </span>
         </div>
@@ -218,7 +220,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="SANS Holidays Hack Challenge 2026 Write-Up" class="md-nav__button md-logo" aria-label="SANS Holidays Hack Challenge 2026 Write-Up" data-md-component="logo">
+    <a href="../.." title="SANS Holidays Hack Challenge 2026 Write-Up" class="md-nav__button md-logo" aria-label="SANS Holidays Hack Challenge 2026 Write-Up" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M224-32c7 0 13.7 3.1 18.3 8.5l136 160c6.1 7.1 7.4 17.1 3.5 25.6S369.4 176 360 176h-24.9l75.2 88.5c6.1 7.1 7.4 17.1 3.5 25.6S401.4 304 392 304h-38.5l88.8 104.5c6.1 7.1 7.4 17.1 3.5 25.6S433.4 448 424 448H256v64c0 17.7-14.3 32-32 32s-32-14.3-32-32v-64H24c-9.4 0-17.9-5.4-21.8-13.9s-2.6-18.5 3.5-25.6L94.5 304H56c-9.4 0-17.9-5.4-21.8-13.9s-2.6-18.5 3.5-25.6l75.2-88.5H88c-9.4 0-17.9-5.4-21.8-13.9s-2.6-18.5 3.5-25.6l136-160C210.3-28.9 217-32 224-32"/></svg>
@@ -233,37 +235,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Welcome
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -279,37 +254,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#introduction" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Introduction
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -318,8 +262,10 @@
       
   
   
+    
   
   
+  
     
     
     
@@ -330,11 +276,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
@@ -355,7 +301,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -422,7 +368,7 @@
   
   
     <li class="md-nav__item">
-      <a href="objectives/act_1_its_all_about_defang/" class="md-nav__link">
+      <a href="../act_1_its_all_about_defang/" class="md-nav__link">
         
   
   
@@ -452,7 +398,7 @@
   
   
     <li class="md-nav__item">
-      <a href="objectives/act_1_neighborhood_watch_bypass/" class="md-nav__link">
+      <a href="../act_1_neighborhood_watch_bypass/" class="md-nav__link">
         
   
   
@@ -482,7 +428,7 @@
   
   
     <li class="md-nav__item">
-      <a href="objectives/act_1_santa_s_gift_tracking_service_port_mystery/" class="md-nav__link">
+      <a href="../act_1_santa_s_gift_tracking_service_port_mystery/" class="md-nav__link">
         
   
   
@@ -512,7 +458,7 @@
   
   
     <li class="md-nav__item">
-      <a href="objectives/act_1_visual_networking_thinger/" class="md-nav__link">
+      <a href="../act_1_visual_networking_thinger/" class="md-nav__link">
         
   
   
@@ -542,7 +488,7 @@
   
   
     <li class="md-nav__item">
-      <a href="objectives/act_1_visual_firewall_thinger/" class="md-nav__link">
+      <a href="../act_1_visual_firewall_thinger/" class="md-nav__link">
         
   
   
@@ -572,7 +518,7 @@
   
   
     <li class="md-nav__item">
-      <a href="objectives/act_1_intro_to_nmap/" class="md-nav__link">
+      <a href="../act_1_intro_to_nmap/" class="md-nav__link">
         
   
   
@@ -602,7 +548,7 @@
   
   
     <li class="md-nav__item">
-      <a href="objectives/act_1_blob_storage_challenge_in_the_neighborhood/" class="md-nav__link">
+      <a href="../act_1_blob_storage_challenge_in_the_neighborhood/" class="md-nav__link">
         
   
   
@@ -632,7 +578,7 @@
   
   
     <li class="md-nav__item">
-      <a href="objectives/act_1_spare_key/" class="md-nav__link">
+      <a href="../act_1_spare_key/" class="md-nav__link">
         
   
   
@@ -662,7 +608,7 @@
   
   
     <li class="md-nav__item">
-      <a href="objectives/act_1_the_open_door/" class="md-nav__link">
+      <a href="../act_1_the_open_door/" class="md-nav__link">
         
   
   
@@ -692,7 +638,7 @@
   
   
     <li class="md-nav__item">
-      <a href="objectives/act_1_owner/" class="md-nav__link">
+      <a href="../act_1_owner/" class="md-nav__link">
         
   
   
@@ -727,6 +673,8 @@
                 
   
   
+    
+  
   
   
     
@@ -736,11 +684,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
@@ -761,7 +709,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -779,7 +727,7 @@
   
   
     <li class="md-nav__item">
-      <a href="objectives/act_2_retro_recovery/" class="md-nav__link">
+      <a href="../act_2_retro_recovery/" class="md-nav__link">
         
   
   
@@ -809,7 +757,7 @@
   
   
     <li class="md-nav__item">
-      <a href="objectives/act_2_mail_detective/" class="md-nav__link">
+      <a href="../act_2_mail_detective/" class="md-nav__link">
         
   
   
@@ -839,7 +787,7 @@
   
   
     <li class="md-nav__item">
-      <a href="objectives/act_2_IDORable_bistro/" class="md-nav__link">
+      <a href="../act_2_IDORable_bistro/" class="md-nav__link">
         
   
   
@@ -869,7 +817,7 @@
   
   
     <li class="md-nav__item">
-      <a href="objectives/act_2_dosis_network_down/" class="md-nav__link">
+      <a href="../act_2_dosis_network_down/" class="md-nav__link">
         
   
   
@@ -899,7 +847,7 @@
   
   
     <li class="md-nav__item">
-      <a href="objectives/act_2_rogue_gnome_identity_provider/" class="md-nav__link">
+      <a href="../act_2_rogue_gnome_identity_provider/" class="md-nav__link">
         
   
   
@@ -929,7 +877,7 @@
   
   
     <li class="md-nav__item">
-      <a href="objectives/act_2_quantgnome_leap/" class="md-nav__link">
+      <a href="../act_2_quantgnome_leap/" class="md-nav__link">
         
   
   
@@ -956,10 +904,39 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="objectives/act_2_going_in_reverse/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 3c-1.11 0-2 .89-2 2v14c0 1.11.89 2 2 2h14c1.11 0 2-.89 2-2V5c0-1.11-.89-2-2-2zm0 2h14v14H5zm2 2v2h10V7zm0 4v2h10v-2zm0 4v2h7v-2z"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Objective 7
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -977,6 +954,48 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#objective" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Objective
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solution" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Solution
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1046,7 +1065,7 @@
   
   
     <li class="md-nav__item">
-      <a href="objectives/act_3_gnome_tea/" class="md-nav__link">
+      <a href="../act_3_gnome_tea/" class="md-nav__link">
         
   
   
@@ -1076,7 +1095,7 @@
   
   
     <li class="md-nav__item">
-      <a href="objectives/act_3_hack_a_gnome/" class="md-nav__link">
+      <a href="../act_3_hack_a_gnome/" class="md-nav__link">
         
   
   
@@ -1106,7 +1125,7 @@
   
   
     <li class="md-nav__item">
-      <a href="objectives/act_3_snowcat_rce_and_priv_esc/" class="md-nav__link">
+      <a href="../act_3_snowcat_rce_and_priv_esc/" class="md-nav__link">
         
   
   
@@ -1136,7 +1155,7 @@
   
   
     <li class="md-nav__item">
-      <a href="objectives/act_3_schrodingers_scope/" class="md-nav__link">
+      <a href="../act_3_schrodingers_scope/" class="md-nav__link">
         
   
   
@@ -1166,7 +1185,7 @@
   
   
     <li class="md-nav__item">
-      <a href="objectives/act_3_on_the_wire/" class="md-nav__link">
+      <a href="../act_3_on_the_wire/" class="md-nav__link">
         
   
   
@@ -1221,17 +1240,70 @@
 
 
 
-<h1 id="welcome">Welcome<a class="headerlink" href="#welcome" title="Permanent link">⚓︎</a></h1>
-<p><img alt="Group photo" src="img/misc/holidayhack2025.jpg" /></p>
-<h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">⚓︎</a></h2>
-<p>Here is a compilation of the notes made during the SANS Holiday Hack challenge 2025.
-It is more of a step by step process to record my thought process, rather than a complete tutorial/report.</p>
+<h1 id="act-2-going-in-reverse">Act 2: Going in reverse<a class="headerlink" href="#act-2-going-in-reverse" title="Permanent link">⚓︎</a></h1>
+<p><strong>Difficulty</strong>: <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1l-73.6 144.2-159.9 25.4c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2l144.4-73.4L432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2l-25.3-159.9 114.4-114.5c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3z"/></svg></span><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1l-73.6 144.2-159.9 25.4c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2l144.4-73.4L432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2l-25.3-159.9 114.4-114.5c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3z"/></svg></span><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M288.1-32c9 0 17.3 5.1 21.4 13.1L383 125.3l159.9 25.4c8.9 1.4 16.3 7.7 19.1 16.3s.5 18-5.8 24.4L441.7 305.9 467 465.8c1.4 8.9-2.3 17.9-9.6 23.2s-17 6.1-25 2l-144.3-73.4L143.8 491c-8 4.1-17.7 3.3-25-2s-11-14.2-9.6-23.2l25.2-159.9L20 191.4c-6.4-6.4-8.6-15.8-5.8-24.4s10.1-14.9 19.1-16.3l159.9-25.4 73.6-144.2c4.1-8 12.4-13.1 21.4-13.1zm0 76.8L230.3 158c-3.5 6.8-10 11.6-17.6 12.8l-125.5 20 89.8 89.9c5.4 5.4 7.9 13.1 6.7 20.7l-19.8 125.5 113.3-57.6c6.8-3.5 14.9-3.5 21.8 0l113.3 57.6-19.8-125.5c-1.2-7.6 1.3-15.3 6.7-20.7l89.8-89.9-125.5-20c-7.6-1.2-14.1-6-17.6-12.8z"/></svg></span><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M288.1-32c9 0 17.3 5.1 21.4 13.1L383 125.3l159.9 25.4c8.9 1.4 16.3 7.7 19.1 16.3s.5 18-5.8 24.4L441.7 305.9 467 465.8c1.4 8.9-2.3 17.9-9.6 23.2s-17 6.1-25 2l-144.3-73.4L143.8 491c-8 4.1-17.7 3.3-25-2s-11-14.2-9.6-23.2l25.2-159.9L20 191.4c-6.4-6.4-8.6-15.8-5.8-24.4s10.1-14.9 19.1-16.3l159.9-25.4 73.6-144.2c4.1-8 12.4-13.1 21.4-13.1zm0 76.8L230.3 158c-3.5 6.8-10 11.6-17.6 12.8l-125.5 20 89.8 89.9c5.4 5.4 7.9 13.1 6.7 20.7l-19.8 125.5 113.3-57.6c6.8-3.5 14.9-3.5 21.8 0l113.3 57.6-19.8-125.5c-1.2-7.6 1.3-15.3 6.7-20.7l89.8-89.9-125.5-20c-7.6-1.2-14.1-6-17.6-12.8z"/></svg></span><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M288.1-32c9 0 17.3 5.1 21.4 13.1L383 125.3l159.9 25.4c8.9 1.4 16.3 7.7 19.1 16.3s.5 18-5.8 24.4L441.7 305.9 467 465.8c1.4 8.9-2.3 17.9-9.6 23.2s-17 6.1-25 2l-144.3-73.4L143.8 491c-8 4.1-17.7 3.3-25-2s-11-14.2-9.6-23.2l25.2-159.9L20 191.4c-6.4-6.4-8.6-15.8-5.8-24.4s10.1-14.9 19.1-16.3l159.9-25.4 73.6-144.2c4.1-8 12.4-13.1 21.4-13.1zm0 76.8L230.3 158c-3.5 6.8-10 11.6-17.6 12.8l-125.5 20 89.8 89.9c5.4 5.4 7.9 13.1 6.7 20.7l-19.8 125.5 113.3-57.6c6.8-3.5 14.9-3.5 21.8 0l113.3 57.6-19.8-125.5c-1.2-7.6 1.3-15.3 6.7-20.7l89.8-89.9-125.5-20c-7.6-1.2-14.1-6-17.6-12.8z"/></svg></span><br/>
+<strong>Direct link</strong>: <a href="https://.../">Objective 1 terminal</a></p>
+<h2 id="objective">Objective<a class="headerlink" href="#objective" title="Permanent link">⚓︎</a></h2>
+<div class="admonition question">
+<p class="admonition-title">Request</p>
+<p>Kevin in the Retro Store needs help rewinding tech and going in reverse. Extract the flag and enter it here.</p>
+</div>
+<details class="quote">
+<summary>Kevin McFarland</summary>
+<p>Finding an old Commodore 64 disk with a mysterious BASIC program on it? That's like discovering a digital time capsule. The C64 was an incredible machine for its time - 64KB of RAM seemed like an ocean of possibility back then. I spent countless hours as a kid typing in program listings from Compute! magazine, usually making at least a dozen typos along the way.<br/>
+The thing about BASIC programs from that era is they were often written by clever programmers who knew how to hide things in plain sight. Sometimes the most interesting discoveries come from reading the code itself rather than watching it execute. It's like being a digital archaeologist - you're not just looking at what the program does, you're understanding how the programmer thought.<br/>
+Take your time with this one. Those old-school programmers had to be creative within such tight constraints. You'll know the flag by the Christmas phrase that pays.</p>
+</details>
+<h2 id="solution">Solution<a class="headerlink" href="#solution" title="Permanent link">⚓︎</a></h2>
+<p>To be honest, my assembly being pretty rusty, ChatGPT did most of the job there.</p>
+<p>I just passed the code:
+<div class="highlight"><pre><span></span><code>10 REM *** COMMODORE 64 SECURITY SYSTEM ***
+20 ENC_PASS$ = &quot;D13URKBT&quot;
+30 ENC_FLAG$ = &quot;DSA|auhts*wkfi=dhjwubtthut+dhhkfis+hnkz&quot; &#39; old &quot;DSA|qnisf`bX_huXariz&quot;
+40 INPUT &quot;ENTER PASSWORD: &quot;; PASS$
+50 IF LEN(PASS$) &lt;&gt; LEN(ENC_PASS$) THEN GOTO 90
+60 FOR I = 1 TO LEN(PASS$)
+70 IF CHR$(ASC(MID$(PASS$,I,1)) XOR 7) &lt;&gt; MID$(ENC_PASS$,I,1) THEN GOTO 90
+80 NEXT I
+85 FLAG$ = &quot;&quot; : FOR I = 1 TO LEN(ENC_FLAG$) : FLAG$ = FLAG$ + CHR$(ASC(MID$(ENC_FLAG$,I,1)) XOR 7) : NEXT I : PRINT FLAG$
+90 PRINT &quot;ACCESS DENIED&quot;
+100 END
+</code></pre></div></p>
+<p>Here is the output:
+<div class="highlight"><pre><span></span><code>Nice little C64-style XOR challenge 🙂
+
+What it does
+
+The password check XORs each character with 7 and compares it to ENC_PASS$.
+
+So the real password is simply ENC_PASS$ XOR 7.
+
+Same logic for the flag.
+
+Decoded results
+
+Password: C64RULES
+
+Flag: CTF{frost-plan:compressors,coolant,oil}
+
+Why
+
+D13URKBT XOR 7 → C64RULES
+
+ENC_FLAG$ XOR 7 → the flag above
+
+Classic retro crypto, simple but effective for its era.
+</code></pre></div></p>
+<h4 id="and-the-flag-is-ctffrost-plancompressorscoolantoil">And the flag is: CTF{frost-plan:compressors,coolant,oil}<a class="headerlink" href="#and-the-flag-is-ctffrost-plancompressorscoolantoil" title="Permanent link">⚓︎</a></h4>
 
 
 
 
 
 
+
+  
+  
 
 
 
@@ -1275,14 +1347,14 @@ It is more of a step by step process to record my thought process, rather than a
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["toc.integrate", "content.code.copy", "navigation.sections"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["toc.integrate", "content.code.copy", "navigation.sections"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js"></script>
       
-        <script src="js/tablesort.js"></script>
+        <script src="../../js/tablesort.js"></script>
       
     
   </body>

