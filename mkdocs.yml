@@ -1,6 +1,6 @@
 # Reference: https://squidfunk.github.io/mkdocs-material/reference/
-site_name: SANS HHC Write-Up
-site_author: Insert Author name
+site_name: SANS Holidays Hack Challenge 2026 Write-Up
+site_author: Pernelle Mensah
 theme:
   icon:
     # Material for MkDocs bundles several icon sets:
@@ -52,17 +52,6 @@ theme:
       toggle:
         icon: material/weather-sunny
         name: Switch to light mode
-extra:
-  social:
-    - icon: fontawesome/brands/twitter
-      link: https://twitter.com/<twitter_username>
-      name: Twitter
-    - icon: fontawesome/brands/github
-      link: https://github.com/<github_username>
-      name: GitHub
-    - icon: fontawesome/brands/instagram
-      link: https://www.instagram.com/<instagram_username>
-      name: Instagram
 extra_css:
   - css/extra.css
 extra_javascript:
@@ -100,13 +89,28 @@ nav:
 # The 'nav' section defines the content of the sidebar navigation.
 - Welcome: 'index.md'
 - Objectives:
-  - Section 1:
-    - Objective 1: 'objectives/o1.md'
-  - Section 2:
-    - Objective 2: 'objectives/o2.md'
-    - Objective 3: 'objectives/o3.md'
-  - Section 3:
-    - Objective 4: 'objectives/o4.md'
-    - Objective 5: 'objectives/o5.md'
-- Extras:
-  - Easter Eggs: 'easter_eggs.md'
+  - Act 1:
+    - Objective 1: 'objectives/act_1_its_all_about_defang.md'
+    - Objective 2: 'objectives/act_1_neighborhood_watch_bypass.md'
+    - Objective 3: 'objectives/act_1_santa_s_gift_tracking_service_port_mystery.md'
+    - Objective 4: 'objectives/act_1_visual_networking_thinger.md'
+    - Objective 5: 'objectives/act_1_visual_firewall_thinger.md'
+    - Objective 6: 'objectives/act_1_intro_to_nmap.md'
+    - Objective 7: 'objectives/act_1_blob_storage_challenge_in_the_neighborhood.md'
+    - Objective 8: 'objectives/act_1_spare_key.md'
+    - Objective 9: 'objectives/act_1_the_open_door.md'
+    - Objective 10: 'objectives/act_1_owner.md'
+  - Act 2:
+    - Objective 1: 'objectives/act_2_retro_recovery.md'
+    - Objective 2: 'objectives/act_2_mail_detective.md'
+    - Objective 3: 'objectives/act_2_IDORable_bistro.md'
+    - Objective 4: 'objectives/act_2_dosis_network_down.md'
+    - Objective 5: 'objectives/act_2_rogue_gnome_identity_provider.md'
+    - Objective 6: 'objectives/act_2_quantgnome_leap.md'
+    - Objective 7: 'objectives/act_2_going_in_reverse.md'
+  - Act 3:
+    - Objective 1: 'objectives/act_3_gnome_tea.md'
+    - Objective 2: 'objectives/act_3_hack_a_gnome.md'
+    - Objective 3: 'objectives/act_3_snowcat_rce_and_priv_esc.md'
+    - Objective 4: 'objectives/act_3_schrodingers_scope.md'
+    - Objective 5: 'objectives/act_3_on_the_wire.md'
